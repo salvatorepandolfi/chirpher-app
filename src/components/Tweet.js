@@ -20,7 +20,7 @@ class Tweet extends Component {
             return <p>This Tweet doesn't exists</p>
         }
         const {
-            name, avatar, timestamp, text, hasLiked, likes, replies, id, parent
+            name, avatar, timestamp, text, hasLiked, likes, replies, id,  parent
         } = tweet
 
         return (
