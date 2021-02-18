@@ -34,6 +34,28 @@ export default function users(state = {}, action) {
                 [tweet.id]: tweet,
                 ...replyingTo
             }
+        // case ADD_TWEET :
+        //     const {tweet} = action
+        //
+        //     let replyingTo = {}
+        //     if (tweet.replyingTo !== null) {
+        //         const allReplies = state[tweet.replyingTo].replies.concat([tweet.id]);
+        //
+        //         return {
+        //             ...state,
+        //             [action.tweet.id]: action.tweet,
+        //             [action.tweet.replyingTo]: {
+        //                 ...state[tweet.replyingTo],
+        //                 replies: allReplies
+        //             }
+        //         }
+        //     }
+        //
+        //     return {
+        //         ...state,
+        //         [action.tweet.id]: action.tweet,
+        //         ...replyingTo,
+        //     }
         default:
             return state
     }
